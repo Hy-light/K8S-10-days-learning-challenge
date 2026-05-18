@@ -29,11 +29,12 @@ Once the analogy clicks, the YAML stops feeling like hieroglyphics.
 
 ## 🎯 Who This Is For
 
-✅ Engineers learning Kubernetes from scratch and tired of fragmented tutorials
-✅ Cloud professionals refreshing knowledge with a hands-on approach
-✅ Developers transitioning into DevOps or platform engineering
-✅ Teams looking for a shared reference to onboard new members
-✅ Anyone preparing for CKA, CKAD, or the AZ-104/AZ-400 with practical context
+- ✅ Engineers learning Kubernetes from scratch and tired of fragmented tutorials
+- ✅ Cloud professionals refreshing knowledge with a hands-on approach
+- ✅ Developers transitioning into DevOps or platform engineering
+- ✅ Teams looking for a shared reference to onboard new members
+- ✅ Anyone preparing for CKA, CKAD, or the AZ-104/AZ-400 with practical context
+- ✅ Anyone simply curious
 
 This is **not** a video course or a theoretical reading list. Every lab requires you to run commands, break things, and fix them. That's where the real learning happens.
 
@@ -41,18 +42,18 @@ This is **not** a video course or a theoretical reading list. Every lab requires
 
 ## 📚 The 10-Lab Roadmap
 
-| # | Lab | Level | Duration | What You Build |
-|---|-----|-------|----------|----------------|
-| 01 | [AKS Cluster Setup & Your First Pod](lab-01-aks-setup-first-pod.md) | 🟢 Beginner | ~45 min | A real AKS cluster + your first Pod, deployed imperatively and declaratively |
-| 02 | [Deployments, Services & ReplicaSets](lab-02-deployments-services.md) | 🟢 Beginner | ~60 min | Self-healing apps, rolling updates, public LoadBalancer Services |
-| 03 | [ConfigMaps, Secrets & Persistent Storage](lab-03-configmaps-secrets-storage.md) | 🟢 → 🟡 | ~75 min | Configuration injection, the Secret base64 truth, Azure Disk persistence |
-| 04 | [Ingress + TLS with cert-manager](lab-04-ingress-tls-cert-manager.md) | 🟡 Intermediate | ~90–120 min | NGINX Ingress + free auto-renewing Let's Encrypt certificates |
-| 05 | [Helm Charts — Package Your Own App](lab-05-helm-charts.md) | 🟡 Intermediate | ~90–120 min | Build a chart from scratch, dev/prod values, OCI push to ACR |
-| 06 | [Kustomize for Multi-Environment Deploys](lab-06-kustomize.md) | 🟡 Intermediate | ~75–90 min | base + overlays/{dev,staging,prod}, strategic merge vs JSON 6902 patches |
-| 07 | [RBAC, Network Policies & Pod Security](lab-07-rbac-network-policies-pod-security.md) | 🟠 Advanced | ~90–120 min | Multi-tenant security: RBAC, default-deny networking, restricted PSS |
-| 08 | [Autoscaling with HPA + KEDA](lab-08-hpa-keda-autoscaling.md) | 🟠 Advanced | ~90–120 min | CPU-based HPA, event-driven KEDA, scale-to-zero on Azure Service Bus |
-| 09 | [Observability — Prometheus, Grafana & Loki](lab-09-observability-prometheus-grafana-loki.md) | 🟠 Advanced | ~120–150 min | Full observability stack, custom dashboards, alerts that fire on real conditions |
-| 10 | [GitOps with ArgoCD — Multi-Tenant Platform](lab-10-gitops-argocd-multitenant.md) | 🔴 Enterprise | ~150–180 min | ArgoCD, AppProjects, ApplicationSets, App-of-Apps, full disaster recovery |
+| #   | Lab                                                                                           | Level           | Duration     | What You Build                                                                   |
+| --- | --------------------------------------------------------------------------------------------- | --------------- | ------------ | -------------------------------------------------------------------------------- |
+| 01  | [AKS Cluster Setup & Your First Pod](lab-01-aks-setup-first-pod.md)                           | 🟢 Beginner     | ~45 min      | A real AKS cluster + your first Pod, deployed imperatively and declaratively     |
+| 02  | [Deployments, Services & ReplicaSets](lab-02-deployments-services.md)                         | 🟢 Beginner     | ~60 min      | Self-healing apps, rolling updates, public LoadBalancer Services                 |
+| 03  | [ConfigMaps, Secrets & Persistent Storage](lab-03-configmaps-secrets-storage.md)              | 🟢 → 🟡         | ~75 min      | Configuration injection, the Secret base64 truth, Azure Disk persistence         |
+| 04  | [Ingress + TLS with cert-manager](lab-04-ingress-tls-cert-manager.md)                         | 🟡 Intermediate | ~90–120 min  | NGINX Ingress + free auto-renewing Let's Encrypt certificates                    |
+| 05  | [Helm Charts — Package Your Own App](lab-05-helm-charts.md)                                   | 🟡 Intermediate | ~90–120 min  | Build a chart from scratch, dev/prod values, OCI push to ACR                     |
+| 06  | [Kustomize for Multi-Environment Deploys](lab-06-kustomize.md)                                | 🟡 Intermediate | ~75–90 min   | base + overlays/{dev,staging,prod}, strategic merge vs JSON 6902 patches         |
+| 07  | [RBAC, Network Policies & Pod Security](lab-07-rbac-network-policies-pod-security.md)         | 🟠 Advanced     | ~90–120 min  | Multi-tenant security: RBAC, default-deny networking, restricted PSS             |
+| 08  | [Autoscaling with HPA + KEDA](lab-08-hpa-keda-autoscaling.md)                                 | 🟠 Advanced     | ~90–120 min  | CPU-based HPA, event-driven KEDA, scale-to-zero on Azure Service Bus             |
+| 09  | [Observability — Prometheus, Grafana & Loki](lab-09-observability-prometheus-grafana-loki.md) | 🟠 Advanced     | ~120–150 min | Full observability stack, custom dashboards, alerts that fire on real conditions |
+| 10  | [GitOps with ArgoCD — Multi-Tenant Platform](lab-10-gitops-argocd-multitenant.md)             | 🔴 Enterprise   | ~150–180 min | ArgoCD, AppProjects, ApplicationSets, App-of-Apps, full disaster recovery        |
 
 **Total time investment:** ~17–20 hours of focused, hands-on work over 10 days (or at your own pace).
 
@@ -88,11 +89,11 @@ Open [`lab-01-aks-setup-first-pod.md`](lab-01-aks-setup-first-pod.md) and follow
 
 These labs run real Azure infrastructure. With reasonable cleanup, expect:
 
-| Scenario | Approximate Cost |
-|----------|-----------------|
-| Running one lab and cleaning up | < $1 |
-| Working through the whole series, cleaning up between labs | $10–25 total |
-| Leaving a cluster running 24/7 for a week | $50–100+ |
+| Scenario                                                   | Approximate Cost |
+| ---------------------------------------------------------- | ---------------- |
+| Running one lab and cleaning up                            | < $1             |
+| Working through the whole series, cleaning up between labs | $10–25 total     |
+| Leaving a cluster running 24/7 for a week                  | $50–100+         |
 
 **Every lab includes a cleanup section.** Run it. Seriously. The most expensive Kubernetes mistake is the cluster you forgot you left running.
 
@@ -180,7 +181,7 @@ Kubernetes is a system of well-organized parts that have to work together with t
 
 The labs will work without the analogy. They work better with it.
 
-🎼 *And the orchestra plays on.*
+🎼 _And the orchestra plays on._
 
 ---
 
