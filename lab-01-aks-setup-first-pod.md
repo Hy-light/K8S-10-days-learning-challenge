@@ -7,7 +7,7 @@
 
 ---
 
-## 🎼 Explain Like I'm Five years old (ELI5) — What Are We Actually Doing?
+## 🎼 Explain like I'm five years old (ELI5) — What Are We Actually Doing?
 
 Imagine you're putting on a concert. You have musicians, instruments, sheet music, and a concert hall — but without someone to coordinate them, it's just noise. You need a **conductor**: someone who tells each musician when to play, fixes things when a violinist's string snaps mid-performance, and brings in a substitute if someone falls ill.
 
