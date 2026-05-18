@@ -7,7 +7,7 @@
 
 ---
 
-## 🎼 ELI5 — What Are We Actually Doing?
+## 🎼 Explain Like I'm Five years old (ELI5) — What Are We Actually Doing?
 
 Imagine you're putting on a concert. You have musicians, instruments, sheet music, and a concert hall — but without someone to coordinate them, it's just noise. You need a **conductor**: someone who tells each musician when to play, fixes things when a violinist's string snaps mid-performance, and brings in a substitute if someone falls ill.
 
@@ -109,7 +109,7 @@ az aks create \
 
 ⏳ **This takes 5–10 minutes.** Go grab a coffee.
 
-### Step 4 — Connect kubectl to your cluster
+### Step 4 - Connect kubectl to your cluster
 
 ```bash
 az aks get-credentials \
