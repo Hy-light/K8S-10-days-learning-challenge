@@ -373,7 +373,7 @@ spec:
 kubectl apply -f allow-dns.yaml
 
 # DNS now works
-kubectl exec -n team-secure net-test -- nslookup kubernetes.default  
+kubectl exec -n team-secure net-test -- nslookup kubernetes.default
 # OR 
 kubectl exec -n team-secure net-test -- nslookup kubernetes.default.svc.cluster.local
 ```
