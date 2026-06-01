@@ -276,7 +276,8 @@ helm install loki grafana/loki-stack \
   --set loki.persistence.size=10Gi \
   --set promtail.enabled=true
 
-kubectl get pods -n observability -l app.kubernetes.io/name=loki
+kubectl get pods -n observability -l app=loki
+
 ```
 
 > 💡 **In production**, prefer the standalone `grafana/loki` chart with object storage (Azure Blob) instead of `loki-stack`. For learning, `loki-stack` is much simpler.
@@ -430,7 +431,7 @@ alertmanager:
             text: '{{ range .Alerts }}{{ .Annotations.summary }}\n{{ .Annotations.description }}\n{{ end }}'
 ```
 
-Then `helm upgrade kps prometheus-community/kube-prometheus-stack -n observability -f kps-values.yaml`.
+Then `helm upgrade kps prometheus-community/kube-prometheus-stack -n observability -f kps-values.yaml --version 65.0.0`.
 
 > 💡 **Don't put real webhook URLs in version control.** Use a Secret + `secretRef` in production.
 
@@ -464,6 +465,8 @@ kubectl delete namespace observability lab09
 # Verify the underlying PVs are released or deleted
 kubectl get pv
 ```
+### Note
+Should you experience any issue during the lab, I would recommend you spend some time troubleshooting as this will further help your learning.
 
 ---
 
